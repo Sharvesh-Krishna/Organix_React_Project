@@ -1,11 +1,12 @@
 import React from 'react';
 import '../Assets/Aboutus.css';
+import { useNavigate } from 'react-router-dom';
 
 const Aboutus = () => {
+    const navigate = useNavigate();
   const handleSendClick = () => {
-    // Define the logic for handling the send button click
-    // For example, you can collect the form data and perform some action.
-  };
+        navigate("/")  
+    };
 
   return (
     <div className="container">

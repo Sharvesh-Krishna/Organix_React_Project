@@ -1,35 +1,27 @@
-import HomePage from "./Components/HomePage";
 import Explore from "./Components/Explore";
-import Aboutus from "./Components/Aboutus";
+import Homepage from "./Components/Homepage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login";
-import Logout from "./Components/Logout";
-// import client from "./Components/client";
-import './Assets/Explore.css'
-import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
-// import { AppBar } from "@mui/material";
-// import ResponsiveAppBar from "./Pages/ResponAppbar";
-// import Dashboard from "./Pages/Dashboard";
-// import Loader from "./Components/Loader";
-
+import Aboutus from "./Components/Aboutus";
+import Contactus from "./Components/Contactus";
+// import Sample from "./Components/Sample";
 
 function App() {
   return (
-    <>
-        <Router>
-          <Routes>
-              <Route path="/" element={<HomePage/>}/>
-          </Routes>
-{/* <ResponsiveAppBar/> */}
-        {/* <Dashboard/> */}
-          <Routes>
-              {/* <client/> */}
-              <Route path="/Explore" element={<Explore/>}/>
-              <Route path="Aboutus" element={<Aboutus/>}/>
-              <Route path="/Login" element={<Login/>}/>
-              <Route path="/Logout" element={<Logout/>}/>
-          </Routes>
-        </Router>
-    </>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Homepage/>}/>
+          <Route path="/explore" element={<Explore/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/about" element={<Aboutus/>}/>
+          <Route path="/contact" element={<Contactus/>}/>
+          
+        </Routes>
+      </Router>
+      {/* <Sample/> */}
+
+    </div>
   );
 }
 

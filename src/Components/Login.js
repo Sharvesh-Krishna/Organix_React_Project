@@ -25,14 +25,6 @@ const Login = () => {
                 </div>
             </div>
 
-    {/* <script>
-        function f1(){
-            var a = document.getElementById("signup").value;
-            
-            window.location.assign(/HomePage);
-        }
-    </script> */}
-
             </div>
     );
 }

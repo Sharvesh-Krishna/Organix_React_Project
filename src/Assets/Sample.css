@@ -1,0 +1,19 @@
+.poiu{
+    width: 98vw;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+.qwer{
+    width: 10px;
+    height: 10px;
+    border: 2px solid;
+    border-color: aqua;
+}
+
